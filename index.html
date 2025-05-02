@@ -1,1 +1,234 @@
-Lokesh Madanapalli
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Contribution – AI Agent Stock Prediction</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #F0F4FF 0%, #FFFFFF 100%);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4A90E2;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #4A90E2;
+      border-bottom: 2px solid #E4EAF6;
+      padding-bottom: 5px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #E4EAF6;
+    }
+    th {
+      background-color: #E4EAF6;
+      font-weight: 500;
+    }
+    ul {
+      margin-bottom: 20px;
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    a {
+      color: #4A90E2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .screenshots img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lokesh Madanapalli Portfolio Contribution: Elder Ray Index & Crew AI Agent Stock Prediction</h1>
+    
+    <section id="intro">
+<p>Financial markets are complex and driven by both price movements and investor sentiment. Traders often struggle to separate emotion from data when making decisions. The AI Agent Stock Prediction project addresses this by combining the Elder-Ray technical indicator with AI agents to provide objective investment recommendations.</p>
+      <p>The <strong>Elder-Ray Index</strong> quantifies Bull Power (high price minus moving average) and Bear Power (low price minus moving average), offering clear signals of market momentum. I designed and implemented the Elder-Ray calculation module, integrated it into a Streamlit interface supporting real-time and historical modes, and connected it with CrewAI agents to generate BUY, SELL, or HOLD recommendations. This solution ensures traders receive data-driven guidance with visual charts, automated decision tasks, and backtesting insights.</p>
+    </section>
+
+    <section id="overview">
+      <h2>Project Overview & Sprint Objectives</h2>
+      <p>The project was executed over four focused sprints, each delivering key functionality:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Sprint</th>
+            <th>Objective</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Minimal Viable Product – core Elder-Ray calculation and basic UI</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Streamlit UI development & CrewAI integration for live recommendations</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Unit & Integration Testing – ensure reliability and performance</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Backtesting Framework – evaluate strategy on historical data</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="user-stories">
+      <h2>User Story & Task Summary</h2>
+      <p>The primary user story: <em>As a trader, I want a reliable AI-driven tool that analyzes market momentum using the Elder-Ray Index and delivers clear BUY/SELL/HOLD advice.</em> Below is a concise overview of my key tasks; full details are in the appendix.</p>
+      <ul>
+        <li><strong>Sprint 1 (28 h)</strong>: Elder-Ray module — wrote functions for EMA/SMA moving averages, Bull/Bear Power metrics, validated output against sample data.</li>
+        <li><strong>Sprint 2 (22 h)</strong>: UI & AI — developed Streamlit controls, added historical vs. real-time modes, integrated YahooFinance API and CrewAI task creation for decision support.</li>
+        <li><strong>Sprint 3 (20 h)</strong>: Testing & docs — implemented pytest suite covering 90% of code paths, created developer documentation and inline comments.</li>
+        <li><strong>Sprint 4 (27 h)</strong>: Backtesting & analysis — built backtesting engine, plotted performance metrics (Sharpe Ratio, drawdown), and generated summary reports.</li>
+        <li><strong>Ongoing:</strong> Code refactoring for readability, CI/CD pipeline setup with GitHub Actions, and repository maintenance.</li>
+      </ul>
+    </section>
+
+    <section id="contributions">
+      <h2>Key Contributions</h2>
+      <ul>
+        <li>Developed the <strong>Elder-Ray Indicator</strong> for Bull and Bear Power metrics.</li>
+        <li>Integrated the indicator into a <strong>Streamlit UI</strong> with real-time and historical modes.</li>
+        <li>Built the <strong>CrewAI decision engine</strong> for BUY/SELL/HOLD recommendations.</li>
+        <li>Authored comprehensive <strong>unit & integration tests</strong> ensuring robustness.</li>
+        <li>Implemented the <strong>backtesting framework</strong> for historical performance analysis.</li>
+      </ul>
+      <p>Full source code on <a href="https://github.com/LOKESH-0019/Lokesh-AI-Agent-Stock-Prediction" target="_blank">GitHub</a>.</p>
+    </section>
+
+    <section id="screenshots">
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <img src="screenshots/elder_ray_indicator.png" alt="Elder-Ray Indicator in action">
+        <img src="screenshots/streamlit_ui.png" alt="Streamlit UI with indicator controls">
+        <img src="screenshots/investment_decision.png" alt="Investment recommendation example">
+        <img src="screenshots/backtesting_results.png" alt="Backtesting performance chart">
+      </div>
+    </section>
+      <h3>Commit History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Commit SHA</th>
+            <th>Description</th>
+            <th>Story</th>
+            <th>Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Feb 3, 2025</td>
+            <td>15b4709cc2b0…</td>
+            <td>Add elder ray index file</td>
+            <td>ERI</td>
+            <td>ElderRay.1</td>
+          </tr>
+          <tr>
+            <td>Feb 11, 2025</td>
+            <td>3df302f4788…</td>
+            <td>Customization & real-time data option</td>
+            <td>ERI</td>
+            <td>ElderRay.6</td>
+          </tr>
+          <tr>
+            <td>Feb 27, 2025</td>
+            <td>fdee20335e0…</td>
+            <td>Decision support integration</td>
+            <td>ERI</td>
+            <td>ElderRay.8</td>
+          </tr>
+          <tr>
+            <td>Mar 12, 2025</td>
+            <td>eb2ec66df93…</td>
+            <td>Update indicator code</td>
+            <td>ERI</td>
+            <td>ElderRay.8</td>
+          </tr>
+          <tr>
+            <td>Mar 25, 2025</td>
+            <td>f0b7d07d317…</td>
+            <td>Testing for Elder Ray</td>
+            <td>ERI</td>
+            <td>ElderRay.10</td>
+          </tr>
+          <tr>
+            <td>Apr 21, 2025</td>
+            <td>3b260ae89e2…</td>
+            <td>Backtest code</td>
+            <td>ERI</td>
+            <td>ElderRay.11</td>
+          </tr>
+          <tr>
+            <td>Apr 27, 2025</td>
+            <td>41f5a2d46cd…</td>
+            <td>Update backtesting module</td>
+            <td>ERI</td>
+            <td>ElderRay.11</td>
+          </tr>
+        </tbody>
+      </table>
+    <section id="appendix">
+      <h2>Appendix</h2>
+
+      <h3>Task Hours Documents</h3>
+      <ul>
+        <li><a href="Madanapalli%20Sprint%201%20Task%20Hours%20Achieved.docx" download>Sprint 1 Task Hours</a></li>
+        <li><a href="Madanapalli%20Sprint%202%20Task%20Hours%20Achieved.docx" download>Sprint 2 Task Hours</a></li>
+        <li><a href="Madanapalli%20Sprint%203%20Task%20Hours%20Achieved.docx" download>Sprint 3 Task Hours</a></li>
+        <li><a href="Madanapalli%20Sprint%204%20Task%20Hours%20Achieved.docx" download>Sprint 4 Task Hours</a></li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+</html>
+
